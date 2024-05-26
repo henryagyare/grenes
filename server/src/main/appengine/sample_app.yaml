@@ -1,0 +1,7 @@
+runtime: java21
+
+env_variables:
+  DB_USER: "username for cloudsql database"
+  DB_PASSWORD: "password for cloudsql database"
+  DEFAULT_USER_EMAIL: "admin email address"
+  DEFAULT_USER_PASSWORD: "password for admin user"

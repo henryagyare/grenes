@@ -1,0 +1,6 @@
+-keep class io.ktor.server.netty.EngineMain { *; }
+-keep class io.ktor.server.config.HoconConfigLoader { *; }
+-keep class com.example.ApplicationKt { *; }
+-keep class kotlin.reflect.jvm.internal.** { *; }
+-keep class kotlin.text.RegexOption { *; }
+-keep class io.ktor.serialization.kotlinx.json.KotlinxSerializationJsonExtensionProvider { *; }

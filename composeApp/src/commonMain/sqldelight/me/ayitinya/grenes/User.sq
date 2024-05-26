@@ -1,0 +1,25 @@
+import kotlinx.datetime.Instant;
+import me.ayitinya.grenes.data.users.UserId;
+
+CREATE TABLE UserTable (
+uid TEXT AS UserId PRIMARY KEY NOT NULL,
+username TEXT,
+displayName TEXT,
+email TEXT NOT NULL,
+createdAt TEXT AS Instant NOT NULL,
+profileAvatar TEXT,
+city TEXT,
+country TEXT);
+
+insert:
+INSERT INTO UserTable (uid, username, displayName, email, createdAt, profileAvatar, city, country)
+VALUES (?, ?, ?, ?, ?, ?, ?, ?);
+
+deleteByUid:
+DELETE FROM UserTable WHERE uid = ?;
+
+selectAll:
+SELECT * FROM UserTable;
+
+selectByUid:
+SELECT * FROM UserTable WHERE uid = :uid;
